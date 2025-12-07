@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias MyH - Postres Caseros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Delicias MyH</h1>
+        <p>Postres caseros</p>
+        <div class="logo"></div> <!-- Reemplaza con <img src="logo.png" alt="Logo"> si tienes imagen -->
+    </header>
+
+    <section class="products">
+        <div class="card" onclick="openModal('postres')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRM1XBEuYZjv4hjxb_YqDYL4DJ9qAliuk3A&s" alt="Postres">
+            <div class="card-content">
+                <h3>Postres</h3>
+                <p>Variedad de postres caseros deliciosos.</p>
+                <p>Desde $6.000</p>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('bolis')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zlrhnzogNlTUsjHLiduo9rdk8xjEIAZPMg&s" alt="Bolis">
+            <div class="card-content">
+                <h3>Bolis</h3>
+                <p>Bolis artesanales de sabores únicos.</p>
+                <p>Desde $500</p>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('deditos')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMpRPNoMJwKBQLTIzr8HvbXds-y3tUWka2g&s" alt="Deditos">
+            <div class="card-content">
+                <h3>Deditos</h3>
+                <p>Deditos crujientes y sabrosos.</p>
+                <p>Desde $1.000</p>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('mosaicos')">
+            <img src="mosaico.jpeg" alt="Mosaicos">
+            <div class="card-content">
+                <h3>Mosaicos</h3>
+                <p>Mosaicos de Gelanitas.</p>
+                <p>Desde $5.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para subproductos -->
+    <div id="modal-postres" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('postres')">&times;</span>
+            <h2>Tipos de Postres</h2>
+            <div class="sub-products">
+                <div class="card">
+                    <img src="leches D.jpeg" alt="Tarta de Manzana">
+                    <div class="card-content">
+                        <h3>Tres Leches</h3>
+                        <p>Con capas de galletas Oreo.</p>
+                        <p>$6.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="leches D.jpeg" alt="Brownie">
+                    <div class="card-content">
+                        <h3>Tres Leches</h3>
+                        <p>Con capas de galletas Ducales.</p>
+                        <p>$6.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-bolis" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bolis')">&times;</span>
+            <h2>Tipos de Bolis</h2>
+            <div class="sub-products">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/lw9l-0ipWyg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDuP7IIObzBEgFZdCf03CJgxHDbWQ" alt="Boli de Chocolate">
+                    <div class="card-content">
+                        <h3>Boli de Chocolate</h3>
+                        <p>Boli relleno de chocolate.</p>
+                        <p>$500 - 1.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBhswgOJ3Vv6aNvhMrc579uoQ12sCUnBPGQQ&s" alt="Boli de Vainilla">
+                    <div class="card-content">
+                        <h3>Boli de Vainilla</h3>
+                        <p>Boli cremoso de vainilla.</p>
+                        <p>$500 - 1.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.rappi.com/products/1716579144682_1716579143468_1716579141493.jpeg" alt="Boli de Chocolate">
+                    <div class="card-content">
+                        <h3>Boli de Kola con Leche</h3>
+                        <p>Boli relleno de Kola y Leche.</p>
+                        <p>$500 - 1.000</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-deditos" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('deditos')">&times;</span>
+            <h2>Tipos de Deditos</h2>
+            <div class="sub-products">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMpRPNoMJwKBQLTIzr8HvbXds-y3tUWka2g&s" alt="Deditos de Queso">
+                    <div class="card-content">
+                        <h3>Deditos de Queso</h3>
+                        <p>Deditos con relleno de Queso.</p>
+                        <p>$1.000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMpRPNoMJwKBQLTIzr8HvbXds-y3tUWka2g&s" alt="Deditos de Jamón">
+                    <div class="card-content">
+                        <h3>Deditos de Bocadillo</h3>
+                        <p>Deditos con relleno de Bocadillo</p>
+                        <p>$1.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mosaicos" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('mosaicos')">&times;</span>
+            <h2>Tipos de Mosaicos</h2>
+            <div class="sub-products">
+                <div class="card">
+                    <img src="mosaico.jpeg" alt="Mosaico de Frutas">
+                    <div class="card-content">
+                        <h3>Mosaico de Gelatinas</h3>
+                        <p>Mosaico de Gelanitas</p>
+                        <p>$5.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Delicias MyH. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function openModal(type) {
+    document.getElementById('modal-' + type).style.display = 'block';
+}
+
+function closeModal(type) {
+    document.getElementById('modal-' + type).style.display = 'none';
+}
+
+// Cerrar modal al hacer clic fuera
+window.onclick = function(event) {
+    if (event.target.className === 'modal') {
+        event.target.style.display = 'none';
+    }
+}
+    </script>
+
+</body>
+</html>
