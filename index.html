@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Delicias MyH</h1>
-        <p>Postres caseros</p>
+    <header id="encabezado" class="encabezado-principal">
+        <br><br><br><br>
+        <h2></h2>
+        <h3></h3>
         <div class="logo"></div> <!-- Reemplaza con <img src="logo.png" alt="Logo"> si tienes imagen -->
     </header>
 
     <section class="products">
         <div class="card" onclick="openModal('postres')">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRM1XBEuYZjv4hjxb_YqDYL4DJ9qAliuk3A&s" alt="Postres">
+            <img src="leches D.jpeg" alt="Postres">
             <div class="card-content">
                 <h3>Postres</h3>
                 <p>Variedad de postres caseros deliciosos.</p>
-                <p>Desde $6.000</p>
+                <p>Desde $2.500</p>
             </div>
         </div>
         <div class="card" onclick="openModal('bolis')">
@@ -148,26 +149,37 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Delicias MyH. Todos los derechos reservados.</p>
-    </footer>
 
-    <script>
-        function openModal(type) {
+<script>
+ const encabezado = document.getElementById('encabezado');
+
+ function ocultarEncabezado() {
+    encabezado.style.display = 'none';
+}
+
+function mostrarEncabezado() {
+    encabezado.style.display = 'block';
+}
+
+function openModal(type) {
     document.getElementById('modal-' + type).style.display = 'block';
+    ocultarEncabezado();
 }
 
 function closeModal(type) {
     document.getElementById('modal-' + type).style.display = 'none';
+    mostrarEncabezado();
 }
 
 // Cerrar modal al hacer clic fuera
 window.onclick = function(event) {
     if (event.target.className === 'modal') {
         event.target.style.display = 'none';
+        mostrarEncabezado();
     }
-}
-    </script>
+} 
+
+</script>
 
 </body>
 </html>
