@@ -1,9 +1,14 @@
 /* CSS */
 body {
   font-family: Arial, sans-serif;
-  margin-top: 150px; /* Ajusta este valor según sea necesario */
+  margin-top: 150px;
   padding: 0;
-  background-color: #f9f9f9;
+  background: linear-gradient(
+    to bottom,
+    #fff7f2,
+    #f9f9f9,
+    #f1f1f1
+  );
 }
 
 /* ENCABEZADO PROFESIONAL */
@@ -24,6 +29,21 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    #d06a2a,
+    #d38a30,
+    #b0531a
+  );
 }
 
 /* CONTENEDOR */
@@ -100,8 +120,12 @@ header p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px;
-  margin-top: 160px; /* Agregado para dar espacio entre el encabezado y las tarjetas */
+  padding: 30px 20px;
+  margin: 160px auto 0;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .card {
