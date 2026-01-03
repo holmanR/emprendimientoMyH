@@ -314,3 +314,29 @@ body.modal-abierto {
   }
 }
 
+.btn-whatsapp {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+.datos-cliente input,
+.datos-cliente select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}

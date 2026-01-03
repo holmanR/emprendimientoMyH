@@ -247,6 +247,21 @@
   <div class="carrito-footer">
     <strong>Total: <span id="total-carrito">$0</span></strong>
   </div>
+  <div class="datos-cliente">
+  <input type="text" id="nombreCliente" placeholder="👤 Tu nombre">
+  <input type="text" id="direccionCliente" placeholder="📍 Dirección de entrega">
+  
+  <select id="metodoPago">
+    <option value="">💰 Método de pago</option>
+    <option value="Efectivo">Efectivo</option>
+    <option value="Nequi">Nequi</option>
+    <option value="Daviplata">Daviplata</option>
+  </select>
+</div>
+
+  <button class="btn-whatsapp" onclick="enviarPedidoWhatsApp()">
+  📲 Pedir por WhatsApp
+  </button>
 </div>
 
 <script src="carrito.js"></script>
